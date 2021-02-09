@@ -10,7 +10,7 @@ module.exports = {
     description: `Prepare for the Microsoft MS-500 exam`,
     author: `@gruberjl`
   },
-  pathPrefix: "/WebSite",
+  pathPrefix: "/",
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
