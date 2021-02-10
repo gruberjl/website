@@ -8,17 +8,6 @@ import Header from './header'
 //
 
 export default function Page({ children }) {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
   return (
     <div>
       <Header />
