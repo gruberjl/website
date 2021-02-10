@@ -1,5 +1,4 @@
 import React from "react"
-import { useStaticQuery, Link, graphql } from "gatsby"
 import { Stack } from 'office-ui-fabric-react/lib/Stack'
 import Header from './header'
 //
@@ -27,7 +26,7 @@ export default function Page({ children }) {
         <Stack>
           <Link to={`/`}>
             <h3>
-              {data.site.siteMetadata.title}
+              GitBit
             </h3>
           </Link>
           <Link to={`/about/`} >
