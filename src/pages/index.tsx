@@ -23,16 +23,11 @@ const App: React.FunctionComponent = () => {
         className="App"
         gap={15}
       >
-        <img
-          src="https://raw.githubusercontent.com/Microsoft/just/master/packages/just-stack-uifabric/template/src/components/fabric.png"
-          alt="logo"
-        />
         <Text variant="xxLarge" styles={boldStyle}>
-          Welcome to Your UI Fabric App
+          GitBit - Microsoft 365 Security Administration (Exam MS-500)
         </Text>
         <Text variant="large">
-          For a guide on how to customize this project, check out the UI Fabric
-          documentation.
+          Prepare for the Microsoft MS-500 exam
         </Text>
         <Text variant="large" styles={boldStyle}>
           Essential Links
