@@ -26,7 +26,6 @@ export default function Heading(props) {
         <link rel="canonical" href={canonicalUrl} />
         <meta name="description" content="Prepare for the Microsoft MS-500 exam" />
       </Helmet>
-      <div>The URL of this page is {JSON.stringify(canonicalUrl)}</div>
     </div>
   )
 }
