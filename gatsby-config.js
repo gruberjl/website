@@ -1,30 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `GitBit - Microsoft 365 Security Administration (Exam MS-500)`,
+    title: "GitBit",
     description: `Prepare for the Microsoft MS-500 exam`,
-    author: `@gruberjl`
+    author: '@gruberjl',
+    siteUrl: "https://www.gitbit.org"
   },
-  pathPrefix: "/",
   plugins: [
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        name: `GitBit`,
-        short_name: `GitBit`,
-        description: `Prepare for the Microsoft MS-500 exam`,
-        lang: `en`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#ffffff`,
-        display: `standalone`,
-        icon: `src/images/android-chrome-512x512.png`,
-        icon_options: {
-          purpose: `any maskable`,
-        },
+        trackingId: "UA-10841251-3",
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-typescript`,
-  ]
-}
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
+    },
+  ],
+};
