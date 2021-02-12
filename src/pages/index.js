@@ -39,7 +39,7 @@ const IndexPage = () => {
           <Container>
             <Row style={alignCenterStyles}>
               <Col style={imageCenterStyles}>
-                <img src={M365CertificationImg} alt="Microsoft 365 MS-500 Logo"/>
+                <img src={M365CertificationImg} alt="Microsoft 365 MS-500 Logo" width='340' height='340'/>
               </Col>
               <Col>
                 <Row>

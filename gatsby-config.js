@@ -15,11 +15,16 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
+        name: `GitBit`,
+        short_name: `GitBit`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
       },
     },
     "gatsby-transformer-sharp",
@@ -31,5 +36,12 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: 'gatsby-plugin-zopfli',
+      options: {
+        extensions: ['css', 'html', 'js', 'svg']
+      }
+    },
+    "gatsby-plugin-offline",
   ],
 };
