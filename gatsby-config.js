@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "GitBit",
-    description: `Prepare for the Microsoft MS-500 exam`,
+    description: `Get Certified in MS-500 Microsoft 365 Security Administration`,
     author: '@gruberjl',
     siteUrl: "https://www.gitbit.org"
   },

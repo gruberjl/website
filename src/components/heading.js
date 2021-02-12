@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Heading(props) {
   const data = useStaticQuery(
@@ -25,6 +26,7 @@ export default function Heading(props) {
         <title>GitBit</title>
         <link rel="canonical" href={canonicalUrl} />
         <meta name="description" content="Prepare for the Microsoft MS-500 exam" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
     </div>
   )
